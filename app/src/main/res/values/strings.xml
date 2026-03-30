@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Time Spark</string>
+
+    <string name="title">Time Spark</string>
+    <string name="hint_time">Enter time of day (Morning, Afternoon, Night)</string>
+
+    <string name="btn_generate">Generate Spark</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_suggestions">Suggestions</string>
+
+    <string name="toast_reset">Ready for your next spark ✨</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navyBlue"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <!-- Input Field -->
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_time"
+        android:textColor="@android:color/white"
+        android:textColorHint="#AAC4FF"
+        android:backgroundTint="@android:color/white"
+        android:inputType="text"
+        android:autofillHints=""
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/titleTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <!-- 🔥 MAIN BUTTON (Generate Spark - BIG) -->
+    <Button
+        android:id="@+id/btnSpark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_generate"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/lightBlue"
+        android:textSize="18sp"
+        android:padding="14dp"
+        app:layout_constraintTop_toBottomOf="@id/timeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_reset"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/lightBlue"
+        app:layout_constraintTop_toBottomOf="@id/btnSpark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Suggestion Result -->
+    <TextView
+        android:id="@+id/suggestTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/btnReset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <!-- 💬 Suggestions Button (NOW AT BOTTOM) -->
+    <Button
+        android:id="@+id/btnSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_suggestions"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/lightBlue"
+        app:layout_constraintTop_toBottomOf="@id/suggestTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
